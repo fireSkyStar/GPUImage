@@ -31,6 +31,11 @@ extern NSString *const kGPUImageColorSwizzlingFragmentShaderString;
     GPUImageRotationMode inputRotation;
 }
 
+/*
+ *  控制是否是照相机输入
+ */
+@property (nonatomic, assign) BOOL isCameraInput;
+
 @property(readwrite, nonatomic) BOOL hasAudioTrack;
 @property(readwrite, nonatomic) BOOL shouldPassthroughAudio;
 @property(readwrite, nonatomic) BOOL shouldInvalidateAudioSampleWhenDone;
